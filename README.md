@@ -10,17 +10,17 @@ There are two SwiftData model classes: `Airport` and `Airplane`.
 These three computed properties depend on `Airplane.state` so they should trigger observation.
 
 
-##Steps to reproduce
+## Steps to reproduce
 1. Click on an airport. 
 2. The `AirportView` will appear. 
 3. Notice that the number of planes departing, in flight, and landing are correct.
 4. Click on the button to land all planes.
 5. Notice that the icons update, but the number of planes departing, in flight, and landing do not update.
 
-##Expected behavior
+## Expected behavior
 
 The number of planes departing, in flight, and landing should update since they are computed properties that depend on airplane.state
 
-##Actual behavior
+## Actual behavior
 
 The number of planes departing, in flight, and landing do not update.
