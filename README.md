@@ -6,8 +6,8 @@ There are two SwiftData model classes: `Airport` and `Airplane`.
 
 `Airplane.state` has three values: `.departing`, `.inFlight`, and `.landing`.
 
-`Airport` has three computed properties: `numberOfPlanesDeparting`, `numberOfPlanesInFlight`, and `numberOfPlanesLanding`. 
-These three computed properties depend on `Airplane.state` so they should trigger observation.
+`Airport` has three computed properties: `numberOfAirplanesDeparting`, `numberOfAirplanesInFlight`, and `numberOfAirplanesLanding`. 
+These three computed properties depend on `Airplane.state` (a stored property) so they should trigger observation.
 
 
 ## Steps to reproduce
